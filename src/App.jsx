@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Tech from "./components/Tech";
 import Project from "./components/projects/index";
-import ProjectPage from './pages/projects';
+import ProjectPage from "./pages/projects";
 
 function App() {
   return (
@@ -26,7 +26,6 @@ function App() {
                   <Tech />
                   <Experience />
                   <Project />
-                  
                 </>
               }
             />

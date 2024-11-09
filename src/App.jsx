@@ -17,21 +17,20 @@ function App() {
 
         <div className="container mx-auto px-8">
           <Navbar />
-          <Hero />
-          <Tech />
-          <Experience />
-          <Project />
-          {/* <Routes>
+          <Routes>
             <Route
               path="/"
               element={
                 <>
-                  
+                  <Hero />
+                  <Tech />
+                  <Experience />
+                  <Project />
                 </>
               }
-            /> */}
-            {/* <Route path="/projects" element={<ProjectPage />} /> */}
-          {/* </Routes> */}
+            />
+            <Route path="/projects" element={<ProjectPage />} />
+          </Routes>
           <Contact />
         </div>
       </div>

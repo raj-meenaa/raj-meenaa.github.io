@@ -1,8 +1,16 @@
 import project1 from "../assets/projects/Drum-kit.png";
-import project2 from "../assets/about.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project2 from "../assets/projects/project2.png";
+import project3 from "../assets/projects/project-1.jpg";
+import project4 from "../assets/projects/tictac.png"
+import easehikes from "../assets/projects/Easehikes.png"
 const projects = [
+    {
+        name: "easehikes.in",
+        description: "Developed a secure MERN-based rental platform with advanced features like role-based booking, partial payments, date blocking, and automated refunds. Streamlined order management across user, seller, and admin roles for seamless operation.",
+        href: "https://easehikes.in",
+        imageSrc: easehikes,
+        technologies: ["Node.js", "React.js", "Express.js", "mongoDB"],
+    },
     {
         name: "Twitter Clone",
         description: "Twitter clone with a full-featured interface for posting tweets, following users, and engaging with content. Includes responsive design for seamless use on both desktop and mobile devices.",

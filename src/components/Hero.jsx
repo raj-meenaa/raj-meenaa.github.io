@@ -12,14 +12,13 @@ export default function Hero() {
   };
   return (
     <header className="flex flex-col items-center content-center justify-start py-10 md:pb-20 gap-16 md:gap-28">
-      
       <motion.h1
         className="text-4xl font-semibold text-center text-transparent md:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-          RAJ M33NA
+        RAJ M33NA
       </motion.h1>
 
       <div className="relative">
@@ -32,15 +31,28 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="text-4xl font-bold text-center md:text-6xl"
           >
-            <Typewriter
-              words={['Innovate. Code. Elevate.']}
-              loop={0}
-              cursor
-              cursorStyle="_"
-              typeSpeed={50}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
+            <div className="hidden md:block">
+              <Typewriter
+                words={["Innovate. Code. Elevate."]}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={50}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </div>
+            <div className="block md:hidden">
+              <Typewriter
+                words={["Innovate.", "Code.", "Elevate."]}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={80}
+                deleteSpeed={80}
+                delaySpeed={1000}
+              />
+            </div>
           </motion.h1>
 
           <p className="relative max-w-3xl my-5 text-base text-center opacity-90 md:text-lg text-tertiary leading-5 md:leading-7">

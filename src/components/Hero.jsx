@@ -61,6 +61,17 @@ export default function Hero() {
             technologies, build creative solutions, and share my journey through
             the world of software development, one line of code at a time!
           </p>
+          <figcaption className="font-medium text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <div className="flex items-center justify-center space-x-2">
+              <span>Captured at</span>
+              <a
+                href="https://github.com/RajMeena01"
+                className="text-blue-500 hover:text-blue-700 font-semibold transition-colors duration-200"
+              >
+                <ins className="underline decoration-2">DevHaven</ins>
+              </a>
+            </div>
+          </figcaption>
         </div>
       </div>
     </header>

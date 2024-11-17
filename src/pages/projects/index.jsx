@@ -1,10 +1,13 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import ProjectCard from "../../components/projects/projectCard";
 import projects from "../../constants/projects";
 
 const ProjectPage = () => {
     const navigate = useNavigate();
-
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <div className="relative flex flex-col items-center p-10 overflow-hidden">
             {/* Back Button */}

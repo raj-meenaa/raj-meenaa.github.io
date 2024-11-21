@@ -1,4 +1,4 @@
-import easehikes from "../assets/projects/Easehikes.png"
+import easehikes from "../assets/projects/Frame 26.png"
 import project2 from "../assets/projects/momentMarker.png"
 import project3 from "../assets/projects/project2.png";
 import project4 from "../assets/projects/project-1.jpg";

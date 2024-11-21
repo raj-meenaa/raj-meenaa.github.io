@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+
 export default function Hero() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -10,8 +11,9 @@ export default function Hero() {
       },
     },
   };
+
   return (
-    <header className="flex flex-col items-center content-center justify-start py-10 md:pb-20 gap-16 md:gap-28">
+    <header className="flex flex-col items-center content-center justify-start py-10 md:pb-20 gap-16 md:gap-28 relative z-10">
       <motion.h1
         className="text-4xl font-semibold text-center text-transparent md:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
         variants={containerVariants}
@@ -21,8 +23,8 @@ export default function Hero() {
         RAJ M33NA
       </motion.h1>
 
-      <div className="relative">
-        <div className="absolute right-0 bg-blue-800 rounded-full blur-3xl w-72 h-72 opacity-20"></div>
+      <div className="relative z-20">
+        <div className="absolute right-0 bg-blue-800 rounded-full blur-3xl w-72 h-72 opacity-20 -z-10"></div>
 
         <div className="flex flex-col items-center justify-center px-5">
           <motion.h1
@@ -61,12 +63,16 @@ export default function Hero() {
             technologies, build creative solutions, and share my journey through
             the world of software development, one line of code at a time!
           </p>
-          <figcaption className="font-medium text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+
+          <figcaption className="font-medium text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 z-30">
             <div className="flex items-center justify-center space-x-2">
               <span>Captured at</span>
               <a
                 href="https://github.com/RajMeena01"
-                className="text-blue-500 hover:text-blue-700 font-semibold transition-colors duration-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-700 font-semibold transition-colors duration-200 z-30"
+                style={{ position: "relative", zIndex: "30" }}
               >
                 <ins className="underline decoration-2">DevHaven</ins>
               </a>

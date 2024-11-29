@@ -49,6 +49,7 @@ export default function ProjectCard({ project }) {
         </span>
         <img
           src={imageSrc}
+          loading="lazy"
           alt={`${name} project image`}
           className="object-cover w-full h-full"
         />

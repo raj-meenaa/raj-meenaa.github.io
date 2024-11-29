@@ -1,7 +1,7 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Experience from "./components/Experience";
-import Hero from "./components/Hero";
+import Introduction from "./components/Introduction";
 import Navbar from "./components/Navbar";
 import Tech from "./components/Tech";
 import Project from "./components/projects/index";
@@ -22,7 +22,7 @@ function App() {
               path="/"
               element={
                 <>
-                  <Hero />
+                  <Introduction />
                   <Tech />
                   <Experience />
                   <Project />
@@ -31,7 +31,7 @@ function App() {
             />
             <Route path="/projects" element={<ProjectPage />} />
           </Routes>
-          <Contact />
+          <Footer />
         </div>
       </div>
     </Router>

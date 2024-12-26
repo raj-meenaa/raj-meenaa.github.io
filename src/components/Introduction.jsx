@@ -68,7 +68,7 @@ export default function Introduction() {
             <div className="flex items-center justify-center space-x-2">
               <span>Captured at</span>
               <a
-                href="https://github.com/RajMeena01"
+                href="https://github.com/raj-meenaa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700 font-semibold transition-colors duration-200 z-30"

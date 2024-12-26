@@ -9,7 +9,7 @@ function Navbar() {
   </div>
   <div className="m-8 flex items-center justify-center gap-4 text-2xl">
   <a href="https://www.linkedin.com/in/raj-meena/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-    <a href="https://github.com/RajMeena01" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+    <a href="https://github.com/raj-meenaa" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
     <a href="https://x.com/__rajmeena" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter /></a>
     <a href="https://www.instagram.com/__rajmeena/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
     

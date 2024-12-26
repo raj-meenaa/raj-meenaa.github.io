@@ -20,7 +20,7 @@ export default function Introduction() {
         initial="hidden"
         animate="visible"
       >
-        RAJ M33NA
+        RAJ M33NA 
       </motion.h1>
 
       <div className="relative z-20">

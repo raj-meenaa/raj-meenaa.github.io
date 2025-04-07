@@ -2,6 +2,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import Python from "../assets/Tech/python.svg";
 import Clang from "../assets/Tech/clang.svg";
+import Java  from "../assets/Tech/java.svg"
 import { SiExpress, SiCplusplus, SiJavascript, SiMongodb, SiMysql } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -40,6 +41,7 @@ function Tech() {
           { icon: <img src={Clang} alt="C" />, duration: 1.9, tech:"C" },
           { icon: <SiCplusplus className="text-blue-400" />, duration: 1,  tech:"C++"},
           { icon: <img src={Python} alt="Python" />, duration: 1.5, tech:"Python" },
+          { icon: <img src={Java} alt="Java" />, duration: 1.8, tech:"Java" },
           { icon: <SiJavascript className="text-yellow-400" />, duration: 1.9, tech:"JavaScript"},
           { icon: <SiMongodb className="text-green-500" />, duration: 1.3, tech:"MongoDB"},
           { icon: <SiExpress className="text-gray-100" />, duration: 1.5, tech:"Express.js" },

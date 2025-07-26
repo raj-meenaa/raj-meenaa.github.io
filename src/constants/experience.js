@@ -7,7 +7,7 @@ export const EXPERIENCES = [
     // technologies: ["Node.js", "React.js", "Express.js", "mongoDB"],
   },
   {
-    year: "Nov 2024 - Feb 2025",
+    year: "Dec 2024 - Feb 2025",
     role: "Web Developement Intern",
     company: "Indian Institute Of Technology, Guwahati",
     description:`Engineered an interactive web application using Vite, React.js, and Python to streamline machining chatter simulations, cutting down manual analysis time by 60%. Delivered dynamic visualizations for three distinct models—Milling SDOF and Turning SDOF/2DOF—showcased in multiple research demonstrations. Built a high-performance Flask backend capable of handling over 50 real-time simulations per session with sub-200ms latency. Incorporated Supabase for secure user authentication and efficient storage of 500+ simulation results.`,

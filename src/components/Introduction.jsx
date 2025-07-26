@@ -32,7 +32,7 @@ export default function Introduction() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          RAJ M33NA
+          RAJ MEENA
         </motion.h1>
 
         {/* Typewriter section */}

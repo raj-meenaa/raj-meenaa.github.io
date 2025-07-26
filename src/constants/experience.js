@@ -10,14 +10,14 @@ export const EXPERIENCES = [
     year: "Nov 2024 - Feb 2025",
     role: "Web Developement Intern",
     company: "Indian Institute Of Technology, Guwahati",
-    description:`Collaborated in a 3-member team to design and develop an interactive web-based software platform that accepts machining parameters, simulates chatter behavior, and visualizes stability lobes for various machining processes. Developed a dynamic frontend using Vite and React, integrated with a Python backend for computational simulations of Milling SDOF, Turning SDOF, and Turning 2DOF models. Integrated Supabase for secure user authentication and data management, enabling users to save and retrieve their simulation results seamlessly.`,
+    description:`Engineered an interactive web application using Vite, React.js, and Python to streamline machining chatter simulations, cutting down manual analysis time by 60%. Delivered dynamic visualizations for three distinct models—Milling SDOF and Turning SDOF/2DOF—showcased in multiple research demonstrations. Built a high-performance Flask backend capable of handling over 50 real-time simulations per session with sub-200ms latency. Incorporated Supabase for secure user authentication and efficient storage of 500+ simulation results.`,
     // technologies: ["Node.js", "React.js", "Express.js", "mongoDB"],
   },
   {
-    year: "Dec 2024 - Feb 2025",
+    year: "July 2024 - Sept 2024",
     role: "Full-Stack Developer | Website Development",
     company: "Hirrent",
-    description:`Independently developed and deployed the official website for Hirrent using the MERN stack. Focused on responsive UI/UX, API integrations, and state management using Zustand. Handled deployment on AWS EC2 and implemented robust frontend components for the User, Seller, and Admin panels.`,
+    description:`As a Full-Stack Developer at Hirrent, I launched a MERN-based rental application with over 200 users, enabling seamless listing, booking, and product management. I deployed the platform on AWS EC2 with 99.9% uptime, handling more than 1,000 monthly requests during beta testing. I implemented secure JWT authentication and integrated PhonePe payments, successfully processing 50+ transactions. Additionally, I collaborated with the product team to convert 20+ feature requests into scalable backend APIs and intuitive UI flows.`,
     // technologies: ["Node.js", "React.js", "Express.js", "mongoDB"],
   },
 

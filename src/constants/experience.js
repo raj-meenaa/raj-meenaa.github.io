@@ -15,7 +15,7 @@ export const EXPERIENCES = [
   },
   {
     year: "July 2024 - Sep 2024",
-    role: "Full-Stack Developer | Website Development",
+    role: "Software Engineer Intern",
     company: "Hirrent",
     description:`As a Full-Stack Developer at Hirrent, I launched a MERN-based rental application with over 200 users, enabling seamless listing, booking, and product management. I deployed the platform on AWS EC2 with 99.9% uptime, handling more than 1,000 monthly requests during beta testing. I implemented secure JWT authentication and integrated PhonePe payments, successfully processing 50+ transactions. Additionally, I collaborated with the product team to convert 20+ feature requests into scalable backend APIs and intuitive UI flows.`,
     // technologies: ["Node.js", "React.js", "Express.js", "mongoDB"],

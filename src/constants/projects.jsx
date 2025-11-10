@@ -1,4 +1,5 @@
 import easehikes from "../assets/projects/Frame 26.png"
+import EchoType from "../assets/projects/EchoType.png"
 import project2 from "../assets/projects/momentMarker.png"
 import project3 from "../assets/projects/project2.png";
 import project4 from "../assets/projects/project-1.jpg";
@@ -12,6 +13,13 @@ const projects = [
         href: "https://easehikes.in",
         imageSrc: easehikes,
         technologies: ["Node.js", "React.js", "Express.js", "mongoDB", "payment gateways"],
+    },
+    {
+        name: "EchoType",
+        description: "Integrating AI capabilities, Implementing voice input, Building a user interface, Creating a client-server architecture.",
+        href: "https://github.com/raj-meenaa/EchoType",
+        imageSrc: EchoType,
+        technologies: ["Node.js", "React.js", "Express.js"],
     },
     {
         name: "moment-Marker",

@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Tech from "./components/Tech";
 import Project from "./components/projects/index";
 import ProjectPage from "./pages/projects";
+import TechStack from "./components/TechStack";
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
                   >
                     <Introduction />
                     <Tech />
+                    {/* <TechStack /> */}
+
                     <Experience />
                     <Project />
                   </motion.div>

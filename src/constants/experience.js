@@ -1,6 +1,6 @@
 export const EXPERIENCES = [
   {
-    year: "Jul 2023 - Present",
+    year: "Jul 2023 - Jul 2025",
     role: "Founder & Lead",
     company: "Ease Hikes",
     description:`As the Founder & Lead of Ease Hikes, I launched a rental platform focused on hiking and adventure gear, overseeing both business operations and product development. I led the company to secure 2nd place at the Cultinno & CII Pitch Party, earning funding and opportunities for market research. In this role, I managed investor relations and conducted strategic market analysis to drive the company’s growth and success.`,

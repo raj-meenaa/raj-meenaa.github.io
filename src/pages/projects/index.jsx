@@ -12,7 +12,7 @@ const ProjectPage = () => {
     }, []);
 
     return (
-        <div className="relative min-h-screen bg-gradient-to-b from-neutral-900 to-neutral-950 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="relative min-h-screen  py-12 px-4 sm:px-6 lg:px-8">
             {/* Back Button */}
             <motion.button
                 initial={{ opacity: 0, x: -20 }}

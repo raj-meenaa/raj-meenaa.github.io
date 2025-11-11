@@ -1,4 +1,84 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+// import { HashRouter as Router, Route, Routes } from "react-router-dom";
+// import { AnimatePresence, motion } from "framer-motion";
+// import Footer from "./components/Footer";
+// import Experience from "./components/Experience";
+// import Introduction from "./components/Introduction";
+// import Navbar from "./components/Navbar";
+// import Tech from "./components/Tech";
+// import Project from "./components/projects/index";
+// import ProjectPage from "./pages/projects";
+// // import TechStack from "./components/TechStack";
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-purple-500/30 selection:text-purple-200">
+//         {/* Animated background layer */}
+//         <div className="fixed inset-0 -z-10">
+//           <div className="absolute inset-0 z-[-2] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.2),rgba(255,255,255,0))]">
+//             {/* Animated gradient overlay */}
+//             <motion.div
+//               initial={{ opacity: 0 }}
+//               animate={{ opacity: 1 }}
+//               className="absolute inset-0 bg-[linear-gradient(45deg,rgba(99,102,241,0.1),rgba(168,85,247,0.1))]"
+//               style={{
+//                 animation: 'pulse 12s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+//               }}
+//             />
+//           </div>
+          
+//           {/* Animated noise texture */}
+//           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-soft-light" />
+//         </div>
+
+//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
+//           <Navbar />
+//           <AnimatePresence mode="wait">
+//             <Routes>
+//               <Route
+//                 path="/"
+//                 element={
+//                   <motion.div
+//                     initial={{ opacity: 0 }}
+//                     animate={{ opacity: 1 }}
+//                     exit={{ opacity: 0 }}
+//                     transition={{ duration: 0.3 }}
+//                   >
+//                     <Introduction />
+//                     <Tech />
+//                     {/* <TechStack /> */}
+
+//                     <Experience />
+//                     <Project />
+//                   </motion.div>
+//                 }
+//               />
+//               <Route
+//                 path="/projects"
+//                 element={
+//                   <motion.div
+//                     initial={{ opacity: 0, y: 20 }}
+//                     animate={{ opacity: 1, y: 0 }}
+//                     exit={{ opacity: 0, y: -20 }}
+//                     transition={{ duration: 0.3 }}
+//                   >
+//                     <ProjectPage />
+//                   </motion.div>
+//                 }
+//               />
+//             </Routes>
+//           </AnimatePresence>
+//           <Footer />
+//         </div>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+import { HashRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
@@ -7,72 +87,101 @@ import Navbar from "./components/Navbar";
 import Tech from "./components/Tech";
 import Project from "./components/projects/index";
 import ProjectPage from "./pages/projects";
-// import TechStack from "./components/TechStack";
+import { useEffect } from "react";
 
-function App() {
+// Smoothly scroll to top on route change
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      // allow hash targets like #projects
+      const el = document.querySelector(hash);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      else window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [pathname, hash]);
+  return null;
+}
+
+function AppShell() {
   return (
-    <Router>
-      <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-purple-500/30 selection:text-purple-200">
-        {/* Animated background layer */}
-        <div className="fixed inset-0 -z-10">
-          <div className="absolute inset-0 z-[-2] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.2),rgba(255,255,255,0))]">
-            {/* Animated gradient overlay */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="absolute inset-0 bg-[linear-gradient(45deg,rgba(99,102,241,0.1),rgba(168,85,247,0.1))]"
-              style={{
-                animation: 'pulse 12s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-              }}
-            />
-          </div>
-          
-          {/* Animated noise texture */}
-          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-soft-light" />
+    <div className="relative min-h-screen flex flex-col overflow-x-hidden text-neutral-300 antialiased selection:bg-purple-500/30 selection:text-purple-200">
+      {/* Animated background layer */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 z-[-2] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.2),rgba(255,255,255,0))]">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            className="absolute inset-0 bg-[linear-gradient(45deg,rgba(99,102,241,0.1),rgba(168,85,247,0.1))]"
+            style={{ filter: "saturate(1.05)" }}
+          />
+        </div>
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-soft-light" />
+      </div>
+
+      {/* Content container */}
+      <div className="w-full">
+        <div className=" mx-auto ">
+          <Navbar />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
-          <Navbar />
-          <AnimatePresence mode="wait">
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Introduction />
-                    <Tech />
-                    {/* <TechStack /> */}
+        {/* Main grows to push footer down */}
+        <main className="flex-1">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
+            <AnimatePresence mode="wait">
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <Introduction />
+                      <Tech />
+                      <Experience />
+                      {/* Ensure your Projects section has id="projects" if you want /#projects to work */}
+                      <Project />
+                    </motion.div>
+                  }
+                />
+                <Route
+                  path="/projects"
+                  element={
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -20 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ProjectPage />
+                    </motion.div>
+                  }
+                />
+              </Routes>
+            </AnimatePresence>
+          </div>
+        </main>
 
-                    <Experience />
-                    <Project />
-                  </motion.div>
-                }
-              />
-              <Route
-                path="/projects"
-                element={
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <ProjectPage />
-                  </motion.div>
-                }
-              />
-            </Routes>
-          </AnimatePresence>
+        {/* Footer stays at the bottom thanks to flex layout */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
           <Footer />
         </div>
       </div>
-    </Router>
+    </div>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <AppShell />
+    </Router>
+  );
+}

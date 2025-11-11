@@ -7,7 +7,7 @@ function Experience() {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-16 text-3xl font-bold text-center md:my-24 md:text-4xl"
+        className="my-8 text-3xl font-bold text-center md:my-18 md:text-4xl"
       >
         Experience
       </motion.h2>

@@ -3,13 +3,12 @@ import ProjectCard from "./projectCard";
 import { motion } from "framer-motion";
 export default function Projects() {
   return (
-    <div className="flex flex-col items-center justify-start px-5 py-10 overflow-hidden">
-      <div className="flex flex-col  items-center  justify-center w-full max-w-4xl gap-5">
+      <div className="flex flex-col px-5  items-center  justify-center w-full max-w-4xl gap-5">
         <motion.h2
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
-          className="my-20 text-center text-4xl"
+          className="my-8 text-3xl font-bold text-center md:my-18 md:text-4xl"
         >
           Projects
         </motion.h2>
@@ -44,6 +43,5 @@ export default function Projects() {
           </a>
         </p>
       </div>
-    </div>
   );
 }

@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Tech from "./components/Tech";
 import Project from "./components/projects/index";
 import ProjectPage from "./pages/projects";
-import TechStack from "./components/TechStack";
+// import TechStack from "./components/TechStack";
 
 function App() {
   return (

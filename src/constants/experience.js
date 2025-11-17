@@ -1,5 +1,12 @@
 export const EXPERIENCES = [
   {
+    year: "Mar 2025 - Sep 2024",
+    role: "Software Engineer Intern",
+    company: "Hirrent",
+    description:`As a Full-Stack Developer at Hirrent, I launched a MERN-based rental application with over 200 users, enabling seamless listing, booking, and product management. I deployed the platform on AWS EC2 with 99.9% uptime, handling more than 1,000 monthly requests during beta testing. I implemented secure JWT authentication and integrated Razorpay Payment Gateway workflows with robust validation. Additionally, I collaborated with the product team to convert 20+ feature requests into scalable backend APIs and intuitive UI flows.`,
+    // technologies: ["Node.js", "React.js", "Express.js", "mongoDB"],
+  },
+  {
     year: "Jul 2023 - Jul 2025",
     role: "Founder & Lead",
     company: "Ease Hikes",
@@ -13,14 +20,6 @@ export const EXPERIENCES = [
     description:`Engineered an interactive web application using Vite, React.js, and Python to streamline machining chatter simulations, cutting down manual analysis time by 60%. Delivered dynamic visualizations for three distinct models—Milling SDOF and Turning SDOF/2DOF—showcased in multiple research demonstrations. Built a high-performance Flask backend capable of handling over 50 real-time simulations per session with sub-200ms latency. Incorporated Supabase for secure user authentication and efficient storage of 500+ simulation results.`,
     // technologies: ["Node.js", "React.js", "Express.js", "mongoDB"],
   },
-  {
-    year: "July 2024 - Sep 2024",
-    role: "Software Engineer Intern",
-    company: "Hirrent",
-    description:`As a Full-Stack Developer at Hirrent, I launched a MERN-based rental application with over 200 users, enabling seamless listing, booking, and product management. I deployed the platform on AWS EC2 with 99.9% uptime, handling more than 1,000 monthly requests during beta testing. I implemented secure JWT authentication and integrated PhonePe payments, successfully processing 50+ transactions. Additionally, I collaborated with the product team to convert 20+ feature requests into scalable backend APIs and intuitive UI flows.`,
-    // technologies: ["Node.js", "React.js", "Express.js", "mongoDB"],
-  },
-
   {
     year: "Jan 2023 - Dec 2023",
     role: "Development Team Coordinator",

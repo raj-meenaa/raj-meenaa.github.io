@@ -3,7 +3,7 @@ import { FaNodeJs } from "react-icons/fa";
 import Python from "../assets/Tech/python.svg";
 import Clang from "../assets/Tech/clang.svg";
 import Java  from "../assets/Tech/java.svg"
-import { SiExpress, SiCplusplus, SiJavascript, SiMongodb, SiMysql } from "react-icons/si";
+import { SiExpress, SiCplusplus, SiJavascript, SiMongodb, SiMysql} from "react-icons/si";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({

@@ -1,5 +1,12 @@
 export const EXPERIENCES = [
   {
+    year: "Aug 2026 - Present",
+    role: "Specialist Programmer",
+    company: "Infosys",
+    description: `Currently undergoing technical training at Infosys, focusing on Python, Agentic AI, and AI application development using LangChain and LangGraph. Building a strong foundation in LLM-based application development, prompt engineering, and AI agent workflows while strengthening problem-solving and software development skills.`,
+    // technologies: ["Python", "LangChain", "LangGraph", "LLMs"]
+  },
+  {
     year: "Mar 2025 - Sep 2025",
     role: "Software Engineer Intern",
     company: "Hirrent",
